@@ -24,4 +24,11 @@ Project Steps
 6. Set up flask and twilio. To set up flask and twilio API, run the following (assuming you have pip 
 and python installed and requirements.txt has been filled out):
 
-    pip install -r requirements.txt
+    bin/pip install -r requirements.txt
+
+    do NOT use pip install -r requirements.txt
+
+To run Flask, first acitvate the virtualenv then run the server:
+
+    source bin/activate
+    (BostonHacks)$ python controllers/run.py
