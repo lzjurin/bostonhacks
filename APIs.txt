@@ -12,3 +12,16 @@ OneDrive
     Maybe set up as a CMS for a website?
 OneNote
 GroupMe
+
+Cortana?
+
+INFORMATION
+    aka.ms/________dev-center
+        bing
+        onedrive
+        onenote
+        groupme
+        kinect
+        wp
+    aka.ms/azurepasshack
+    aka.ms/visualstudiohack
