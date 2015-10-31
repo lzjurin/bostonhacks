@@ -28,3 +28,29 @@ Kinect
             Then go to clips and Gesture Recognition and tag the clips (annotate)
             ML uses those annotations to refine its analysis
         Danger of over-fitting, causes you to be too specific eliminating recognition of generic cases
+
+
+
+Band SDK
+    Types of subscritions
+        Heart rate - 1 Hz, BPM, read quality
+        Accelerometer - XYZ acceleration in units of g
+        Gyroscope - XYZ angular velocity
+        Distance
+        pedometer
+        Skin temp
+        UV
+        Band contact
+        Calories
+    Humphrey has a photo
+
+    APIs
+        Project Oxford
+            Face APIs
+                See your users with Face Detection and Recognition
+            Speech APIs
+                Communicate with your users with speech recognition and synthesis powered by Bing
+            Computer Vision APIs
+                Understand images and generate thumbnails
+            Language Understanding Intelligent Service (LUIS)
+                Understand natural language commands tailored to your application (!)

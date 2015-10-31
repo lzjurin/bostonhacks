@@ -57,3 +57,6 @@ Band
         Email previews and calendar alerts
     Band only takes in data and sends it out
         You have to build an app to do the processing
+    Do different types of vibrations
+        App idea: Man GPS
+        Microsoft Band vibrates to tell you which way to go
