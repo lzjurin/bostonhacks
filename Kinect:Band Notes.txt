@@ -23,3 +23,37 @@ Kinect
         Healthcare
         Education
         Training/manufacturing
+    Data sources
+        Color
+        Infrared
+        Depth
+        Body index
+        Body (skeletal joint tracking)
+        Audio
+
+
+
+Band
+    All day wearable device
+    Advanced Tech
+        10 sensors
+        Touch display
+        2 day+ battery life
+    Skin sensor
+        Are you wearing the band?
+    UV sensor
+    Accelerometer
+    Sleeping
+    Heart Rate
+        Road rage tracker? Wat
+    NO GPS on the Band itself
+        Uses phone GPS data
+        DOES track distance moved via the accelerometer
+    Far beyond step tracker
+    Productivity
+        Notifications driving user engagement
+        Band surfaces important information at the right time
+        Incoming calls, texts, social updates, weather, finance, and more
+        Email previews and calendar alerts
+    Band only takes in data and sends it out
+        You have to build an app to do the processing

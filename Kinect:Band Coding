@@ -1,0 +1,30 @@
+Kinect/Band Coding
+
+
+Kinect
+    KinectSensor class
+
+    Windows operating system required
+    Requires VisualStudio
+    C# or Javascript/HTML
+        Downfall Javascript/HTML is a little slower
+        Upside easier to code
+    C#
+        this.sensor = KinectSensor.GetDefault90;
+        this.sensor.Open();
+            BLAHHHH
+        this.sensor.Close();
+
+    Gesture Recognition
+    Heuristic
+        Gesture is a coding problem
+        Quick to do simple gestures/poses
+        ML can also be useful to find good signals for Heuristic approach
+    Machine Learning with G.B.
+        Gesture is a data problem
+        Signals which may not be easily human understandable (progress in a baseball swing)
+        Large investment for production
+        Record several clips of people going through various movements
+            Then go to clips and Gesture Recognition and tag the clips (annotate)
+            ML uses those annotations to refine its analysis
+        Danger of over-fitting, causes you to be too specific eliminating recognition of generic cases
