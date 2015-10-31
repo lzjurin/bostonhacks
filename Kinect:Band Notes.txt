@@ -1,0 +1,25 @@
+Microsoft Band Usage
+
+Kinect
+    Camera that can see in 3D
+    Traditional video camera + a 4 element microphone array
+    Powerful SDK
+        Can recognize that a person is in front of the sensor and what position they're in for example
+    Sensor features
+        Wide FOV
+        Large range
+        End of hand and skeletal joint tracking
+        Color and IR sensors
+    Body
+        Range is 0.5-4.5 meters
+        Data is collection of body objs with up to 25 joints each
+        Up to 6 simultaneous bodies
+        Hand state tracking on 2 of those bodies
+    Gestures and speech
+        Use of Kinect to grab items off a wikipedia article
+    Usage scenarios
+        Retail
+        Therapy
+        Healthcare
+        Education
+        Training/manufacturing
