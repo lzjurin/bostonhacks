@@ -32,3 +32,24 @@ To run Flask, first acitvate the virtualenv then run the server:
 
     source bin/activate
     (BostonHacks)$ python controllers/run.py
+
+In order to have the website accessible to the internet, even if we run the server we need something to host it.
+For that, we use Heroku!
+
+Steps:
+Get python, virtualenv, and pip (pip for resolving dependencies)
+Heroku user account info:
+    user: larryzhang101@gmail.com
+    pw:   tSf11Wy1rY
+
+Install the Heroku Toolbelt on your workstation from https://devcenter.heroku.com/articles/getting-started-with-python-o
+    This gives you access to the Heroku command-line client, giving you the heroku local command
+
+Then, use 'heroku login' to log into the Heroku account.
+We also need to resolve the dependency 'gunicorn' via:
+
+    pip install gunicorn
+
+--------
+We now need to declare our process types with a Procfile. This is already done in the procfile in this repo but you can
+take a look if you want to understand how it works. Now, we simply execute heroku local.
