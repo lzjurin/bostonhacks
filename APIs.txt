@@ -1,0 +1,14 @@
+Bing
+    Maps
+    Speech
+    Translator
+    Search
+Office
+    Mail
+    Calendar
+    Contacts
+OneDrive
+    File storage
+    Maybe set up as a CMS for a website?
+OneNote
+GroupMe
