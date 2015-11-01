@@ -45,14 +45,19 @@ stormpath_manager = StormpathManager(app)
 ################################################################
 
 def checkPlatform():
-    if (request.values.get('From', None)):
+    if (request.values.get('', None)):
         resp = twilio.twiml.Response()
         resp.message("Hi " + request.values.get('From', None) + "!")
         return str(resp)
+    else:
+        return None
+
 
 @app.route("/", methods=['GET', 'POST'])
 def show_posts():
-    checkPlatform()
+    # msg = checkPlatform()
+    # if msg != None:
+    #     return msg
     posts = []
     for account in stormpath_manager.application.accounts:
         if account.custom_data.get('posts'):
@@ -65,6 +70,9 @@ def show_posts():
 @app.route('/add', methods=['POST'])
 @login_required
 def add_post():
+    # msg = checkPlatform()
+    # if msg:
+    #     return msg
     if not user.custom_data.get('posts'):
         user.custom_data['posts'] = []
 
@@ -81,6 +89,9 @@ def add_post():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    # msg = checkPlatform()
+    # if msg:
+    #     return msg
     error = None
 
     if request.method == 'POST':
@@ -101,6 +112,9 @@ def login():
 
 @app.route('/logout')
 def logout():
+    # msg = checkPlatform()
+    # if msg:
+    #     return msg
     logout_user()
     flash('You were logged out.')
 
