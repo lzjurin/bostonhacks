@@ -61,10 +61,6 @@
         </div>
         </li>
       </ul> -->
-
-      <div class = "menu" align = "center">
-        <a href="#"><span class = "text" style="color: green; font-weight: bold; font-size: 16">HOME<span></a>
-      </div>
       <div class = "menu" align="center">
         {% if user.email %}
           <a href="{{ url_for('logout') }}"><button style="color: green; font-weight: bold; font-size: 16" class='btn-primary'>LOGOUT</button></a>
@@ -72,32 +68,26 @@
           <a href="{{ url_for('login') }}"><span style="color: green; font-weight: bold; font-size: 16" class="text">LOGIN</span></a>
         {% endif %}
       </div>
+      <div class = "menu" align = "center">
+        <a href="#"><span class = "text" style="color: green; font-weight: bold; font-size: 16">HOME<span></a>
+      </div>
     </div>
   </div>
 </nav>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron" >
-  <div class="container" align="center">
-    <div id='logoDiv'>
-      <img src="{{url_for('static', filename='guardianWhite-02.png')}}" id ='logoWhite'>
-    </div> <!-- logo div -->
-    <div id='jumbotext' align = "center">
-        PROTECT THE ONES YOU LOVE.
-    </div>
-  </div>
-</div>
 
-<div class="container">
+
   <!-- Example row of columns -->
- {% for message in get_flashed_messages() %}
-  <div class=flash>{{ message }}</div>
+{% for message in get_flashed_messages() %}
+    <div class=flash>{{ message }}</div>
 {% endfor %}
-{% block body %}{% endblock %}
-  <footer>
+{% block body %}
+{% endblock %}
+
+<footer style="background-color: #006600; color: #00bb00" class="container-fluid">
     <p>&copy; BOSTONHACKS 2015. Larry Zhang, Benjamin Zheng, Humphrey Obuobi</p>
-  </footer>
-</div> <!-- /container -->
+</footer>
 
 
 <!-- Bootstrap core JavaScript

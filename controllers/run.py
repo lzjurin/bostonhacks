@@ -95,8 +95,7 @@ def login():
             return redirect(url_for('home'))
         except StormpathError, err:
             error = err.message
-
-    return render_template('login.html', error=error)
+    return render_template('userlogin.html', error=error)
 
 
 @app.route('/logout')
