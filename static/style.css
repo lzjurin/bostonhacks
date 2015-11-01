@@ -18,9 +18,10 @@ h2              { font-size: 1.2em; }
 .error          { background: #f0d6d6; padding: 0.5em; }
 
 .jumbotron {
-	background-image: '../assets/guardianJumbo.jpg';
+	background-image: url('../static/guardianJumbo.jpg');
 	width: 100%;
 	height: 760px;
+	margin-top: 0px;
 }
 
 .navLogo {
@@ -73,4 +74,22 @@ a:hover{
 	height: 30px;
 	width: 100px;
 	float: right;
+}
+#logoWhite {
+	height: 300px;
+
+}
+#logoDiv {
+	margin-top: 50px;
+	float: center;
+}
+
+#jumbotext {
+	float: bottom;
+	width: 100%;
+	font-size: 4em;
+	font-family: 'Raleway';
+	font-weight: 300;
+	font-color: white;
+	margin-bottom: 75px;
 }
