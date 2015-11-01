@@ -57,7 +57,7 @@ a:hover{
 }
 .menu {
 	border-bottom: 5px solid red;
-	padding: 5px;
+	padding: 25px 0px 10px 0px;
 	color: white;
 	float: right;
 	display: inline-block;

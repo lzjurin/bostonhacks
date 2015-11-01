@@ -28,15 +28,15 @@
 
 <nav class="navbar navbar-default" style="background-color: #333333; margin-bottom: 0px">
   <div class="container-fluid">
-    <div style = "height: 50px; float:left; display:inline-block">
+    <div style = "height: 50px; float:left; display:inline-block; padding: 3px;">
       <a class="navbar-brand" href="#">
           <img src="{{url_for('static', filename='guardianLogo.png')}}" class = 'navLogo'>
           <span class='text' style="font-size: 1.3em">GUARDIAN</span>
       </a>
     </div>
 
-    <div style="width: 100px; height: 30px; float: right">
-      <!-- <ul class = 'nav navbar-nav'>
+    <!-- <div style="width: 100px; height: 30px; float: right">
+      <ul class = 'nav navbar-nav'>
         <li><div class = "menu", align = 'right'><a href="#">HOME</a></div></li>
         <li><div class = "menu", align = 'right'>
         {% if user.email %}
@@ -46,8 +46,8 @@
         {% endif %}
         </div>
         </li>
-      </ul> -->
-    </div>
+      </ul>
+    </div> -->
 
     <div style="float: right">
       <!-- <ul class = 'nav navbar-nav' style = 'display: inline'>
@@ -63,13 +63,13 @@
       </ul> -->
 
       <div class = "menu" align = "center">
-        <a href="#"><span class = "text">HOME<span></a>
+        <a href="#"><span class = "text" style="color: green; font-weight: bold; font-size: 16">HOME<span></a>
       </div>
       <div class = "menu" align="center">
         {% if user.email %}
-          <a href="{{ url_for('logout') }}"><button class='btn-primary'>LOGOUT</button></a>
+          <a href="{{ url_for('logout') }}"><button style="color: green; font-weight: bold; font-size: 16" class='btn-primary'>LOGOUT</button></a>
         {% else %}
-          <a href="{{ url_for('login') }}"><span class="text">LOGIN</span></a>
+          <a href="{{ url_for('login') }}"><span style="color: green; font-weight: bold; font-size: 16" class="text">LOGIN</span></a>
         {% endif %}
       </div>
     </div>
