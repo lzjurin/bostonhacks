@@ -14,7 +14,7 @@ from flask import (
 )
 
 # Import Stormpath methods
-from flask.ext.stormpath import (
+from flask_stormpath import (
     StormpathError,
     StormpathManager,
     User,
