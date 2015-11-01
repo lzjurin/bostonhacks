@@ -1,61 +1,5 @@
-# Datetime module
-from datetime import datetime
-
-# Import Flask modules
-from flask import (
-    Flask,
-    request,
-    redirect,
-    session,
-    abort,
-    flash,
-    render_template,
-    url_for,
-)
-
-# Import Stormpath methods
-from flask.ext.stormpath import (
-    StormpathError,
-    StormpathManager,
-    User,
-    login_required,
-    login_user,
-    logout_user,
-    user,
-)
-
-# Import Twilio API
-import twilio.twiml
-
-# Import custom file loader
-# import imp
-# routes = imp.load_source('guardianroutes', 'config/guardianroutes.py')
-
-# Config app
-app = Flask(__name__)
-app.config['DEBUG'] = True
-app.config['SECRET_KEY'] = '(yeg1d!r4y0q6u=52*1)==z!4isfoxrf#f6pu+-_w&93lv=)89'
-app.config['STORMPATH_API_KEY_FILE'] = 'apiKey.properties'
-app.config['STORMPATH_APPLICATION'] = 'Guardian'
-
-# Initialize Stormpath manager
-stormpath_manager = StormpathManager(app)
-
-def run():
-    resp = twilio.twiml.Response()
-
-    message = "Hiya!"
-    if (request.values):
-        from_num = request.values.get('From', None)
-        if from_num:
-            message = "Hi " + from_num
-
-    resp.message(message)
-    return str(resp)
-
-################################################################
-
 @app.route("/", methods=['GET', 'POST'])
+
 def show_posts():
     posts = []
     for account in stormpath_manager.application.accounts:
@@ -109,8 +53,3 @@ def logout():
     flash('You were logged out.')
 
     return redirect(url_for('show_posts'))
-
-################################################################
-
-if __name__ == "__main__":
-    app.run()
