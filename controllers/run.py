@@ -52,7 +52,6 @@ def run():
 ################################################################
 
 @app.route("/", methods=['GET', 'POST'])
-
 def show_posts():
     if (run()):
         return run()
