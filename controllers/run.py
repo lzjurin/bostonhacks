@@ -41,21 +41,18 @@ app.config['STORMPATH_APPLICATION'] = 'Guardian'
 # Initialize Stormpath manager
 stormpath_manager = StormpathManager(app)
 
-def run():
-    resp = twilio.twiml.Response()
-
-    message = "Hiya!"
-    if (request.values):
-        from_num = request.values.get('From', None)
-        if from_num:
-            message = "Hi " + from_num
-
-    resp.message(message)
-    return str(resp)
 
 ################################################################
 
 @app.route("/", methods=['GET', 'POST'])
+def run():
+    if (request.values and request.values.get('From', None)):
+        resp = twillio.twiml.Response()
+        resp.message("Hi " + request.values.get('From', None) + "!")
+        return str(resp)
+    else:
+        return show_posts()
+
 def show_posts():
     posts = []
     for account in stormpath_manager.application.accounts:
