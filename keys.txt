@@ -16,3 +16,7 @@ apiKey.secret = JXr9jdpddiv3cCeTn1ktJviiq4QW+fnumh1V9GP4cEI
 # Heroku keys
 email = larryzhang101@gmail.com
 pw = tSf11Wy1rY
+
+# Microsoft Application Keys
+client_id = 0000000040172787
+client_secret = jbwSNkwzFdfAR0tOvGg6ec9mJgIl-9cc
