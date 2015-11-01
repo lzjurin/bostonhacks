@@ -1,0 +1,34 @@
+#delegatelist {
+    width: 100%
+}
+#delegatelist td {
+    padding: 5px;
+    border: 1px #aaaaaa;
+    border-style: solid none none
+}
+
+#delegatelist tbody > tr:nth-child(odd) {
+    background-color: #eeeeee
+}
+
+#delegatelist th {
+    padding: 5px;
+}
+
+#login_button {
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    border: 3px outset gray;
+    border-radius: 5px;
+}
+
+#login_button_text {
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 5px;
+}

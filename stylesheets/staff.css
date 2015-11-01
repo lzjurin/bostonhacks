@@ -1,0 +1,16 @@
+#delegatelist {
+    width: 100%
+}
+#delegatelist td {
+    padding: 5px;
+    border: 1px #aaaaaa;
+    border-style: solid none none
+}
+
+#delegatelist tbody > tr:nth-child(odd) {
+    background-color: #eeeeee
+}
+
+#delegatelist th {
+    padding: 5px;
+}

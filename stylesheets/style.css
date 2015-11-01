@@ -1,0 +1,90 @@
+body {
+    font-family: 'Lato', sans-serif !important;
+}
+.logo_large {
+    height: 200px;
+    float: left;
+}
+.logo_small1 {
+    width: 20%;
+}
+.logo_small2 {
+    width: 60%;
+}
+
+.logo_div {
+    padding-top: 0;
+}
+
+.main {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
+
+ .submain {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    padding-bottom: 0;
+    overflow:auto;
+}
+
+.sublogo {
+    height: 80px;
+    float: left;
+}
+
+.firstpage{
+    height: 100vh;
+}
+.firstpage2{
+    height: 550px;
+}
+
+#secondpage{
+    height: 650px;
+    background-color: rgb(191,114,129);
+}
+
+.next {
+    background-color: red;
+}
+
+.modified_bar {
+    margin-top: -50px;
+}
+.top_bar {
+    height: 25px;
+    width: 100%;
+    background-color: black;
+    top: 0px;
+    opacity: 100;
+    left: 0;
+    position: absolute;
+}
+.total_bar {
+    height: 50px;
+}
+
+.login_box {
+    margin-top: 50px;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+}
+.logout {
+    position: absolute;
+    left: 88vw;
+    top: 50px;
+}
