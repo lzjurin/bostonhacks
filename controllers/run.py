@@ -45,7 +45,7 @@ stormpath_manager = StormpathManager(app)
 ################################################################
 
 def checkPlatform():
-    if (request.values.get('From', None)):
+    # if (request.values.get('From', None)):
         resp = twillio.twiml.Response()
         resp.message("Hi " + request.values.get('From', None) + "!")
         return str(resp)
