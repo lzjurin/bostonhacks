@@ -22,6 +22,45 @@ h2              { font-size: 1.2em; }
 }
 
 .navLogo {
-	height: 20%;
+	height: 45px;
 	margin: 10px;
 }
+
+.navBut {
+	color: white;
+	background-color: red;
+	border-radius: 22px;
+	height: 45px;
+	padding: 10px;
+}
+
+.navbar-default {
+	background-color: black;
+	opacity: 50%;
+}
+
+.text {
+	font-family: 'Raleway';
+	font-weight: 300;
+}
+a {
+	color: white;
+	text-decoration: none;
+
+}
+a:hover{
+	color: white;
+	text-decoration: none
+}
+.menu {
+	border-bottom: 5px solid red;
+	padding: 5px;
+	color: white;
+	float: right;
+}
+.menu:hover {
+	background-color: white;
+	border-bottom: 5px solid green;
+	color: black;
+}
+
