@@ -42,6 +42,8 @@ Heroku user account info:
     user: larryzhang101@gmail.com
     pw:   tSf11Wy1rY
 
+    See keys.txt for this information as well
+
 Install the Heroku Toolbelt on your workstation from https://devcenter.heroku.com/articles/getting-started-with-python-o
     This gives you access to the Heroku command-line client, giving you the heroku local command
 
