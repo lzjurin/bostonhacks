@@ -61,16 +61,25 @@
         </div>
         </li>
       </ul> -->
+      {% if user.email %}
+      <a href="{{ url_for('logout') }}">
+      {% else %}
+      <a href="{{ url_for('login') }}">
+      {% endif %}
       <div class = "menu" align="center">
         {% if user.email %}
-          <a href="{{ url_for('logout') }}"><button style="color: green; font-weight: bold; font-size: 16" class='btn-primary'>LOGOUT</button></a>
+          <button style="color: green; font-weight: bold; font-size: 16" class='btn-primary'>LOGOUT</button>
         {% else %}
-          <a href="{{ url_for('login') }}"><span style="color: green; font-weight: bold; font-size: 16" class="text">LOGIN</span></a>
+          <span style="color: green; font-weight: bold; font-size: 16" class="text">LOGIN</span>
         {% endif %}
+    </div>
+    </a>
       </div>
+      <a href="/">
       <div class = "menu" align = "center">
-        <a href="#"><span class = "text" style="color: green; font-weight: bold; font-size: 16">HOME<span></a>
+        <span class = "text" style="color: green; font-weight: bold; font-size: 16">HOME<span>
       </div>
+      </a>
     </div>
   </div>
 </nav>
@@ -85,7 +94,7 @@
 {% block body %}
 {% endblock %}
 
-<footer style="background-color: #006600; color: #00bb00" class="container-fluid">
+<footer style="color: #008800" class="container-fluid">
     <p>&copy; BOSTONHACKS 2015. Larry Zhang, Benjamin Zheng, Humphrey Obuobi</p>
 </footer>
 
