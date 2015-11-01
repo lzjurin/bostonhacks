@@ -44,16 +44,15 @@ stormpath_manager = StormpathManager(app)
 
 ################################################################
 
-@app.route("/", methods=['GET', 'POST'])
-def run():
+def checkPlatform():
     if (request.values.get('From', None)):
         resp = twillio.twiml.Response()
         resp.message("Hi " + request.values.get('From', None) + "!")
         return str(resp)
-    else:
-        return show_posts()
 
+@app.route("/", methods=['GET', 'POST'])
 def show_posts():
+    check()
     posts = []
     for account in stormpath_manager.application.accounts:
         if account.custom_data.get('posts'):
