@@ -51,7 +51,7 @@ def checkPlatform():
         return str(resp)
 
 @app.route("/", methods=['GET', 'POST'])
-def show_posts():
+def home():
     checkPlatform()
     posts = []
     for account in stormpath_manager.application.accounts:
@@ -59,7 +59,7 @@ def show_posts():
             posts.extend(account.custom_data['posts'])
 
     posts = sorted(posts, key=lambda k: k['date'], reverse=True)
-    return render_template('show_posts.html', posts=posts)
+    return render_template('home.html', posts=posts)
 
 
 @app.route('/add', methods=['POST'])
@@ -76,7 +76,7 @@ def add_post():
     user.save()
 
     flash('New post successfully added.')
-    return redirect(url_for('show_posts'))
+    return redirect(url_for('home'))
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -92,7 +92,7 @@ def login():
             login_user(_user, remember=True)
             flash('You were logged in.')
 
-            return redirect(url_for('show_posts'))
+            return redirect(url_for('home'))
         except StormpathError, err:
             error = err.message
 
@@ -104,7 +104,7 @@ def logout():
     logout_user()
     flash('You were logged out.')
 
-    return redirect(url_for('show_posts'))
+    return redirect(url_for('home'))
 
 ################################################################
 
