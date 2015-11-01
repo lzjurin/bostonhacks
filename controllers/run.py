@@ -46,7 +46,7 @@ stormpath_manager = StormpathManager(app)
 
 @app.route("/", methods=['GET', 'POST'])
 def run():
-    if (request.values and request.values.get('From', None)):
+    if (request.values.get('From', None)):
         resp = twillio.twiml.Response()
         resp.message("Hi " + request.values.get('From', None) + "!")
         return str(resp)
